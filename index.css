@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+    background-color: #c2d1e8;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+
+#alphabet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #a2b9db;
+    border-radius: 10px;
+}
+
+#alphaBut {
+    width: 40px;
+    height: 40px;
+    background-color: #749cdb;
+    border-style: none;
+    border-radius: 10px;
+    transform: translate(0px,-8px);
+    color:white;
+    font-weight: bold;
+}
+
+#alphaBut:active{
+    animation: butClick 0.05s forwards;
+}
+
+#alphaButBack {
+    width: 40px;
+    height: 40px;
+    background-color: #607faf;
+    border-style: none;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+@keyframes butClick {
+    100%{transform: translate(0px,-2px)}
+}
+
+#answerWord {
+    font-size: 5rem;
+    margin-bottom: 50px; 
+    font-weight: bold;
+}
+
+
+#info {
+    font-size: 2rem;
+    margin-bottom: 50px; 
+}
+
+#reload {
+     width: 150px;
+    height: 60px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 0px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#reload:hover {
+    animation: borderUp 0.1s forwards
+}
+
+@keyframes borderUp {
+    0% {
+       border-bottom: 0px solid white; 
+        height: 60px;
+    }
+    100% {
+         border-bottom: 3px solid white; 
+        height: 40px;
+        transform: translate(0px, 10px)
+    }
+}

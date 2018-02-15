@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>HangMan</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body onload="startGame()">
-    <div id="alphabet"></div>
+    
     <div id="info">
-    <p>Pick letters to try and reveal the word! Topic = Sports!</p>
+    <p>Pick letters to try and reveal the word!<br/> The Topic is: Our Solar System</p>
     </div>
     
-    <div id="answerWord">asd</div>
+    <div id="answerWord"></div>
     <div id="winner"></div>
+    <div id="alphabet"></div>
     <br />
-    <button id="reload" onclick="restart()">Restart Game</button>
+    <div id="reloadButBack"><button id="reload" onclick="restart()">Restart Game</button></div>
     
 </body>
 </html>
